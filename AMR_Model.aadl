@@ -1,7 +1,11 @@
 package AMR_sys
 public
+	with sei;
+	
 	-- Sistema do AMR 
 	system AMRSystem
+		properties 
+			SEI::WeightLimit => 2.5kg;
 	end AMRSystem;
 	system implementation AMRSystem.impl
 		subcomponents
@@ -10,7 +14,6 @@ public
 			my_controller: process Controller.impl;
 			my_bus: bus HWConnection.impl;
 			my_processor: processor MainProcessor.impl;
-			
 		connections
 			lidar_conn: port my_lidar_sensor.obstacle_data -> my_controller.obstacle_in;
 			wheels_conn: port my_controller.wheels_out -> my_wheels_actuator.wheels_cmd;
@@ -34,6 +37,8 @@ public
 		features 
 			obstacle_data: out data port;
 			bus_access: requires bus access HWConnection;
+		properties
+			SEI::GrossWeight => 0.18kg;
 	end LidarSensor;
 	device implementation LidarSensor.impl
 	end LidarSensor.impl;
@@ -43,6 +48,8 @@ public
 		features 
 			wheels_cmd: in data port;
 			bus_access: requires bus access HWConnection;
+		properties
+			SEI::GrossWeight => 0.18kg;
 	end WheelsActuator;
 	device implementation WheelsActuator.impl
 	end WheelsActuator.impl;
@@ -51,16 +58,22 @@ public
 	processor MainProcessor
 			features 
 				bus_access: requires bus access HWConnection;
+			properties 
+				SEI::GrossWeight => 0.18kg;
 	end MainProcessor;
 	processor implementation MainProcessor.impl
 			subcomponents
 				my_ram: memory Ram;
 	end MainProcessor.impl;
 	memory Ram
+		properties
+			SEI::GrossWeight => 0.18kg;
 	end Ram;
 	
 	-- Barramento de comunicação
 	bus HWConnection
+		properties
+			SEI::GrossWeight => 0.18kg;
 	end HWConnection;
 	bus implementation HWConnection.impl
 	end HWConnection.impl;
