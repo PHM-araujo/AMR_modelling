@@ -10,6 +10,6 @@ Binpacking results: Success
 Processor AMRSystem_impl_Instance.my_processor (1000.0 MIPS) Load: 44% Available: 56%
 
 Thread to Processor Bindings
-Thread AMRSystem_impl_Instance.my_controller.my_thread_controler ==> Processor AMRSystem_impl_Instance.my_processor No CPU capacity
-Thread AMRSystem_impl_Instance.my_controller.my_thread_lidar ==> Processor AMRSystem_impl_Instance.my_processor No CPU capacity
 Thread AMRSystem_impl_Instance.my_controller.my_thread_wheels ==> Processor AMRSystem_impl_Instance.my_processor No CPU capacity
+Thread AMRSystem_impl_Instance.my_controller.my_thread_lidar ==> Processor AMRSystem_impl_Instance.my_processor No CPU capacity
+Thread AMRSystem_impl_Instance.my_controller.my_thread_controler ==> Processor AMRSystem_impl_Instance.my_processor No CPU capacity

@@ -1,0 +1,8 @@
+Weight totals Report
+
+my_bus: [L] Sum of weights / gross weight is 0,180 kg (no limit specified)
+my_lidar_sensor: [L] Sum of weights / gross weight is 0,180 kg (no limit specified)
+my_wheels_actuator: [L] Sum of weights / gross weight is 0,180 kg (no limit specified)
+my_ram: [L] Sum of weights / gross weight is 0,180 kg (no limit specified)
+my_processor: [L] Sum of weights / gross weight is 0,180 kg (no limit specified)
+AMRSystem_impl_Instance: [A] Sum of weights (0,720 kg) is below weight limit of 2,500 kg (71,2 % Weight slack)
