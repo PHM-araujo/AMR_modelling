@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="b1fbd861-262c-4743-a32f-02db38660266" manual="true">
+    <element uuid="67a4fb41-883e-42fe-a477-5a8ede43e7e7" manual="true">
+      <element uuid="3dadf53b-5317-40d5-a8d9-95f05f14dd68" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>control_wheels_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="914d443a-b393-41ab-a162-890514e4446b" manual="true">
+      <element uuid="f7b417aa-7bc8-4388-baba-0bcbc5e4477b" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>lidar_control_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="1424b2aa-0140-46a2-a933-ecb602f975e7" manual="true">
+      <element uuid="08e962f1-7644-4900-aafe-26438bf5a09e" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>lidar_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="a0935c00-efee-4c4d-b07f-5e0a9d9383bc" manual="true">
+      <element uuid="99e71fdf-a47e-4221-82f6-85388c3e4318" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>wheel_thread_conn</seg>
+      </bo>
+    </element>
+    <element uuid="1d174c05-43ac-4629-8570-14b8faab67c2" manual="true" dockArea="left">
+      <bo>
+        <seg>feature</seg>
+        <seg>obstacle_in</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="a890ab84-21f0-4368-87c1-ed9f439eb4c7" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>wheels_out</seg>
+      </bo>
+      <position x="1609.3686065673828" y="48.0"/>
+    </element>
+    <element uuid="3a29c32b-1406-401d-b0e2-282e0586c18e" manual="true">
+      <element uuid="9d16dddc-8235-46a9-8ab8-37aa1bd37889" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>controler_therad_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="5a1b9269-13cb-433c-a341-7b9ff79e2250" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>controler_therad_out</seg>
+        </bo>
+        <position x="314.5208511352539" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>my_thread_controler</seg>
+      </bo>
+      <position x="629.8919219970703" y="38.0"/>
+      <size width="449.56773376464844" height="60.0"/>
+    </element>
+    <element uuid="e84372ca-480c-448f-828d-9a62ed2cec6f" manual="true">
+      <element uuid="85f95229-37ca-445b-9e1f-8a324839fe1c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>lidar_therad_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="7b608d22-71f1-4507-bb0d-b420f7addd53" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>lidar_therad_out</seg>
+        </bo>
+        <position x="261.1614761352539" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>my_thread_lidar</seg>
+      </bo>
+      <position x="240.36326599121094" y="38.0"/>
+      <size width="369.52867126464844" height="60.0"/>
+    </element>
+    <element uuid="935e4f70-3fa5-4cb5-bdca-6014daceabae" manual="true">
+      <element uuid="1e429ad1-d402-4f3b-8a6e-d8322f04fa2c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>wheels_thread_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="2ca28fc7-37ea-4566-aaa5-20ebc70f4935" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>wheels_thread_out</seg>
+        </bo>
+        <position x="293.7786636352539" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>my_thread_wheels</seg>
+      </bo>
+      <position x="1099.4596710205078" y="38.0"/>
+      <size width="418.45445251464844" height="60.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>Controller.impl</seg>
+    </bo>
+    <position/>
+    <size width="1688.8230285644531" height="110.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>AMR_sys::Controller.impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

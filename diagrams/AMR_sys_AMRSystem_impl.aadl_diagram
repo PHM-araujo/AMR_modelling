@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="d41f8974-544a-4e5d-9ad9-4860ab49749e" manual="true">
+    <element uuid="47efa00d-dd04-4798-8362-8d6abfffa90f" manual="true">
+      <element uuid="300888d4-6440-49cb-9729-60da9724e286" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>bus_lidar</seg>
+      </bo>
+      <bendpoints>
+        <point x="119.875" y="178.0"/>
+        <point x="135.875" y="178.0"/>
+        <point x="135.875" y="160.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="1694e726-ed5d-436d-8cb6-18368873da4d" manual="true">
+      <element uuid="807e3edc-3f42-431a-a49e-7c35841716e5" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>bus_processor</seg>
+      </bo>
+      <bendpoints>
+        <point x="119.875" y="168.0"/>
+        <point x="125.875" y="168.0"/>
+        <point x="125.875" y="80.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="98943fb7-4cb3-4522-90b2-9b763d1ca896" manual="true">
+      <element uuid="c959f3cb-dfd1-435b-9a4a-018f8197481f" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>bus_wheels</seg>
+      </bo>
+      <bendpoints>
+        <point x="115.875" y="188.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="c83c4c7f-b6b5-4453-b20b-8096c0c9be56" manual="true">
+      <element uuid="b68fe3b8-06b4-4365-ba90-bc3ea0f2325c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>lidar_conn</seg>
+      </bo>
+    </element>
+    <element uuid="683fb080-71eb-4716-b07f-7e767bfc1b4e" manual="true">
+      <element uuid="b38ecab0-6937-480e-bbfa-1927fb0520fb" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>wheels_conn</seg>
+      </bo>
+      <bendpoints>
+        <point x="817.0611572265625" y="160.0"/>
+        <point x="817.0611572265625" y="138.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="06a6251b-fb4b-4bb9-a501-dd6547ea7bab" manual="true">
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>my_bus</seg>
+      </bo>
+      <position x="12.0" y="158.0"/>
+      <size width="103.87499618530273" height="40.0"/>
+    </element>
+    <element uuid="2eb3f89d-5703-42da-be41-936416043ee0" manual="true">
+      <element uuid="3ec7797b-5174-452c-8252-e2907521898e" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>obstacle_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="7173708d-351c-498c-9652-5a7162f512c4" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>wheels_out</seg>
+        </bo>
+        <position x="216.6692657470703" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>my_controller</seg>
+      </bo>
+      <position x="510.9375" y="118.0"/>
+      <size width="296.1236877441406" height="60.0"/>
+    </element>
+    <element uuid="c322bdae-c85a-4110-8adb-8e8073810b0b" manual="true">
+      <element uuid="0541d856-3613-4acb-93be-612bcc438697" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>bus_access</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="c2f8b315-7681-4b91-9166-13efc7e72e0f" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>obstacle_data</seg>
+        </bo>
+        <position x="250.03516387939453" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>my_lidar_sensor</seg>
+      </bo>
+      <position x="145.875" y="118.0"/>
+      <size width="345.06251525878906" height="60.0"/>
+    </element>
+    <element uuid="fc01ffae-73e8-4c86-a3d7-bfd2e033e9c2" manual="true">
+      <element uuid="bbbfc0e3-fa9e-438e-99de-5a94b4a246cb" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>bus_access</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>my_processor</seg>
+      </bo>
+      <position x="145.875" y="38.0"/>
+      <size width="305.7395782470703" height="60.0"/>
+    </element>
+    <element uuid="59403308-9ecb-4145-9c45-7d43396a317a" manual="true">
+      <element uuid="85227e58-0b34-402c-bf57-23adb6c12443" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>bus_access</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="607dca12-e78c-48c6-b652-8eee620fe74d" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>wheels_cmd</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>my_wheels_actuator</seg>
+      </bo>
+      <position x="827.0611572265625" y="96.0"/>
+      <size width="351.6901092529297" height="110.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>AMRSystem.impl</seg>
+    </bo>
+    <position/>
+    <size width="1190.751220703125" height="218.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>AMR_sys::AMRSystem.impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

@@ -1,0 +1,15 @@
+Bind threads to processors Report
+
+Binpacker Analysis Report
+
+Warning! Bus my_bus is missing Transmission Time property. Using default of 1.0E-5
+Warning! Device my_lidar_sensor is missing period property. Using default of 1 ns
+Warning! Device my_wheels_actuator is missing period property. Using default of 1 ns
+
+Binpacking results: Success
+Processor AMRSystem_impl_Instance.my_processor (1000.0 MIPS) Load: 44% Available: 56%
+
+Thread to Processor Bindings
+Thread AMRSystem_impl_Instance.my_controller.my_thread_controler ==> Processor AMRSystem_impl_Instance.my_processor No CPU capacity
+Thread AMRSystem_impl_Instance.my_controller.my_thread_lidar ==> Processor AMRSystem_impl_Instance.my_processor No CPU capacity
+Thread AMRSystem_impl_Instance.my_controller.my_thread_wheels ==> Processor AMRSystem_impl_Instance.my_processor No CPU capacity

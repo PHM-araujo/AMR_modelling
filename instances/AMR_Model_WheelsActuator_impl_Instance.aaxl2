@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance">
+  <instance:SystemInstance name="WheelsActuator_impl_Instance" category="device">
+    <featureInstance name="wheels_cmd">
+      <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="bus_access" category="busAccess" type="/1">
+      <feature xsi:type="aadl2:BusAccess" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedBusAccess.0"/>
+    </featureInstance>
+    <classifier xsi:type="aadl2:DeviceImplementation" href="../AMR_Model.aadl#AMR_sys.WheelsActuator.impl"/>
+    <systemOperationMode name="No Modes"/>
+    <componentImplementation xsi:type="aadl2:DeviceImplementation" href="../AMR_Model.aadl#AMR_sys.WheelsActuator.impl"/>
+  </instance:SystemInstance>
+  <instance:ComponentInstance name="AMR_sys::HWConnection" category="bus">
+    <classifier xsi:type="aadl2:BusType" href="../AMR_Model.aadl#AMR_sys.HWConnection"/>
+  </instance:ComponentInstance>
+</xmi:XMI>

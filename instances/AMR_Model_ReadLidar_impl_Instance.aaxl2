@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="ReadLidar_impl_Instance" category="thread">
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:NamedValue">
+        <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
+      </ownedValue>
+    </ownedValue>
+    <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.0"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:RangeValue">
+        <minimum xsi:type="aadl2:IntegerLiteral" value="1">
+          <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </minimum>
+        <maximum xsi:type="aadl2:IntegerLiteral" value="2">
+          <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </maximum>
+      </ownedValue>
+    </ownedValue>
+    <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.1"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="10">
+        <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+      </ownedValue>
+    </ownedValue>
+    <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.2"/>
+  </ownedPropertyAssociation>
+  <featureInstance name="lidar_therad_in">
+    <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedDataPort.0"/>
+  </featureInstance>
+  <featureInstance name="lidar_therad_out" direction="out">
+    <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedDataPort.1"/>
+  </featureInstance>
+  <classifier xsi:type="aadl2:ThreadImplementation" href="../AMR_Model.aadl#AMR_sys.ReadLidar.impl"/>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:ThreadImplementation" href="../AMR_Model.aadl#AMR_sys.ReadLidar.impl"/>
+</instance:SystemInstance>

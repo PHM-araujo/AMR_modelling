@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="fd007f1a-9a5d-45bd-aa2e-4bc939a587c3" manual="true">
+    <element uuid="048495aa-80f8-499c-8e50-84000992e91b" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>ActuateWheels</seg>
+      </bo>
+      <position x="281.0586166381836" y="423.0"/>
+      <size width="146.86328887939453" height="35.0"/>
+    </element>
+    <element uuid="335ab3f1-4504-476c-a4f6-cb3004e43572" manual="true">
+      <element uuid="5a0343c1-3da1-408e-8b45-7d67fb29967b" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="265.0586242675781" y="440.5"/>
+          <point x="277.0586242675781" y="440.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>ActuateWheels.impl</seg>
+      </bo>
+      <position x="86.04427337646484" y="423.0"/>
+      <size width="175.01434326171875" height="35.0"/>
+    </element>
+    <element uuid="755854f8-fd87-405e-a44a-b3a3a326b2f1" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>AMRSystem</seg>
+      </bo>
+      <position x="265.4661636352539" y="148.0"/>
+      <size width="126.08203125" height="35.0"/>
+    </element>
+    <element uuid="970832d5-f51b-44d4-a351-c1d99aebff98" manual="true">
+      <element uuid="2ec3ffb2-cf7d-405e-9561-1115175acd0f" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="249.46615600585938" y="165.5"/>
+          <point x="261.4661560058594" y="165.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>AMRSystem.impl</seg>
+      </bo>
+      <position x="86.04427337646484" y="148.0"/>
+      <size width="159.42189025878906" height="35.0"/>
+    </element>
+    <element uuid="be89dd33-6c9a-4785-8e29-807b4776d59a" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>Controller</seg>
+      </bo>
+      <position x="349.3346405029297" y="38.0"/>
+      <size width="114.98827362060547" height="35.0"/>
+    </element>
+    <element uuid="a34df378-08e3-4bc2-b86e-84d133ee1b78" manual="true">
+      <element uuid="d40d7e57-1c75-4da2-aa30-9ca78861272b" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="333.33465576171875" y="55.5"/>
+          <point x="345.33465576171875" y="55.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>Controller.impl</seg>
+      </bo>
+      <position x="186.1953125" y="38.0"/>
+      <size width="143.1393280029297" height="35.0"/>
+    </element>
+    <element uuid="2d94a7a2-bbb6-43c8-8a6f-0829719be86b" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>ControlRules</seg>
+      </bo>
+      <position x="268.45442962646484" y="258.0"/>
+      <size width="134.2591094970703" height="35.0"/>
+    </element>
+    <element uuid="356033a1-a45b-4ebc-ba23-0793f2d184b5" manual="true">
+      <element uuid="57bb1828-85b0-4006-8b72-942d6caecc9d" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="252.45443725585938" y="275.5"/>
+          <point x="264.4544372558594" y="275.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>ControlRules.impl</seg>
+      </bo>
+      <position x="86.04427337646484" y="258.0"/>
+      <size width="162.41016387939453" height="35.0"/>
+    </element>
+    <element uuid="9a243b59-75f8-4c37-b594-e9fa33c41038" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>HWConnection</seg>
+      </bo>
+      <position x="275.8633041381836" y="313.0"/>
+      <size width="141.66797637939453" height="35.0"/>
+    </element>
+    <element uuid="a0dcd8e3-e93c-48e0-bc0e-25f53f9c5fda" manual="true">
+      <element uuid="20f25b5f-557c-497d-b41c-0fca0bc55190" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="259.8633117675781" y="330.5"/>
+          <point x="271.8633117675781" y="330.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>HWConnection.impl</seg>
+      </bo>
+      <position x="86.04427337646484" y="313.0"/>
+      <size width="169.81903076171875" height="35.0"/>
+    </element>
+    <element uuid="f0332568-b995-41f9-8565-fa23146292a7" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>LidarSensor</seg>
+      </bo>
+      <position x="263.27864837646484" y="203.0"/>
+      <size width="129.0833282470703" height="35.0"/>
+    </element>
+    <element uuid="a1bb30e5-ae9d-41d4-946b-772015dd4f05" manual="true">
+      <element uuid="b5be4709-9776-4cbe-9d77-2e702af0e31f" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="247.27865600585938" y="220.5"/>
+          <point x="259.2786560058594" y="220.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>LidarSensor.impl</seg>
+      </bo>
+      <position x="86.04427337646484" y="203.0"/>
+      <size width="157.23438262939453" height="35.0"/>
+    </element>
+    <element uuid="c5d8e940-b049-44be-88b4-407885eac026" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>MainProcessor</seg>
+      </bo>
+      <position x="280.3033981323242" y="368.0"/>
+      <size width="146.10807037353516" height="35.0"/>
+    </element>
+    <element uuid="c3a42774-a37b-4e9d-b2e9-8daea34deeb4" manual="true">
+      <element uuid="c4a05bb1-0b74-4e5c-a964-e5ae8c8a328e" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="264.30340576171875" y="385.5"/>
+          <point x="276.30340576171875" y="385.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>MainProcessor.impl</seg>
+      </bo>
+      <position x="86.04427337646484" y="368.0"/>
+      <size width="174.25912475585938" height="35.0"/>
+    </element>
+    <element uuid="0996489b-d97b-4308-8952-e1427f561c95" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>Ram</seg>
+      </bo>
+      <position x="86.04427337646484" y="38.0"/>
+      <size width="80.15103912353516" height="35.0"/>
+    </element>
+    <element uuid="93e8f959-cae4-477a-98fc-736b226f6689" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>ReadLidar</seg>
+      </bo>
+      <position x="252.90755462646484" y="93.0"/>
+      <size width="118.71223449707031" height="35.0"/>
+    </element>
+    <element uuid="501e0ca6-e268-49ca-af18-767be650ade1" manual="true">
+      <element uuid="1ae7065c-6c0e-419c-b35f-b026a4414b79" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="236.90756225585938" y="110.5"/>
+          <point x="248.90756225585938" y="110.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>ReadLidar.impl</seg>
+      </bo>
+      <position x="86.04427337646484" y="93.0"/>
+      <size width="146.86328887939453" height="35.0"/>
+    </element>
+    <element uuid="dd4e7a51-f99a-4ecf-bd22-4158940e114d" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>WheelsActuator</seg>
+      </bo>
+      <position x="285.4987106323242" y="478.0"/>
+      <size width="151.3033905029297" height="35.0"/>
+    </element>
+    <element uuid="507a57f9-fab8-47a0-9768-f0307865d10a" manual="true">
+      <element uuid="1607f4dd-33dc-43a1-b2eb-f16a8e4daf0e" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="269.49871826171875" y="495.5"/>
+          <point x="281.49871826171875" y="495.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>WheelsActuator.impl</seg>
+      </bo>
+      <position x="86.04427337646484" y="478.0"/>
+      <size width="179.4544448852539" height="35.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>AMR_sys</seg>
+    </bo>
+    <position/>
+    <size width="476.3229064941406" height="525.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>AMR_sys</seg>
+    </context>
+  </config>
+</diagram:Diagram>

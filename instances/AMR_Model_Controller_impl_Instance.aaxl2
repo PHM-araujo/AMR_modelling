@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="Controller_impl_Instance" category="process">
+  <featureInstance name="obstacle_in">
+    <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedDataPort.0"/>
+  </featureInstance>
+  <featureInstance name="wheels_out" direction="out">
+    <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedDataPort.1"/>
+  </featureInstance>
+  <componentInstance name="my_thread_lidar" category="thread">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RangeValue">
+          <minimum xsi:type="aadl2:IntegerLiteral" value="1">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" value="2">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:IntegerLiteral" value="10">
+          <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <featureInstance name="lidar_therad_in">
+      <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="lidar_therad_out" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedDataPort.1"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedThreadSubcomponent.0"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:ThreadType" href="../AMR_Model.aadl#AMR_sys.ReadLidar"/>
+  </componentInstance>
+  <componentInstance name="my_thread_wheels" category="thread">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.15/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RangeValue">
+          <minimum xsi:type="aadl2:IntegerLiteral" value="3">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" value="4">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.15/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:IntegerLiteral" value="30">
+          <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.15/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <featureInstance name="wheels_thread_in">
+      <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.15/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="wheels_thread_out" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.15/@ownedDataPort.1"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedThreadSubcomponent.1"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:ThreadType" href="../AMR_Model.aadl#AMR_sys.ActuateWheels"/>
+  </componentInstance>
+  <componentInstance name="my_thread_controler" category="thread">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Compute_Execution_Time"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:RangeValue">
+          <minimum xsi:type="aadl2:IntegerLiteral" value="3">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </minimum>
+          <maximum xsi:type="aadl2:IntegerLiteral" value="5">
+            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          </maximum>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:IntegerLiteral" value="50">
+          <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <featureInstance name="controler_therad_in">
+      <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance name="controler_therad_out" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedDataPort.1"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedThreadSubcomponent.2"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:ThreadType" href="../AMR_Model.aadl#AMR_sys.ControlRules"/>
+  </componentInstance>
+  <connectionInstance name="obstacle_in -> my_thread_lidar.lidar_therad_in" kind="portConnection" destination="//@componentInstance.0/@featureInstance.0" source="//@featureInstance.0">
+    <connectionReference context="/" source="//@featureInstance.0" destination="//@componentInstance.0/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="my_thread_lidar.lidar_therad_out -> my_thread_controler.controler_therad_in" complete="true" kind="portConnection" destination="//@componentInstance.2/@featureInstance.0" source="//@componentInstance.0/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.0/@featureInstance.1" destination="//@componentInstance.2/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPortConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="my_thread_wheels.wheels_thread_out -> wheels_out" kind="portConnection" destination="//@featureInstance.1" source="//@componentInstance.1/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.1/@featureInstance.1" destination="//@featureInstance.1">
+      <connection xsi:type="aadl2:PortConnection" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance name="my_thread_controler.controler_therad_out -> my_thread_wheels.wheels_thread_in" complete="true" kind="portConnection" destination="//@componentInstance.1/@featureInstance.0" source="//@componentInstance.2/@featureInstance.1">
+    <connectionReference context="/" source="//@componentInstance.2/@featureInstance.1" destination="//@componentInstance.1/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../AMR_Model.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <classifier xsi:type="aadl2:ProcessImplementation" href="../AMR_Model.aadl#AMR_sys.Controller.impl"/>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:ProcessImplementation" href="../AMR_Model.aadl#AMR_sys.Controller.impl"/>
+</instance:SystemInstance>
