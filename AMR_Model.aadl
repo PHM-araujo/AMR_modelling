@@ -21,6 +21,9 @@ public
 			bus_lidar: bus access my_bus -> my_lidar_sensor.bus_access;
 			bus_wheels: bus access my_bus -> my_wheels_actuator.bus_access;
 			bus_processor: bus access my_bus -> my_processor.bus_access;
+		flows
+			LidarToControllerFlow: flow path my_lidar_sensor.obstacle_data -> lidar_conn -> my_controller.obstacle_in;
+			ControllerToWheelsFlow: flow path my_controller.wheels_out -> wheels_conn -> my_wheels_actuator.wheels_cmd;
 		properties 
 			Allowed_Processor_Binding => (reference(my_processor))
 				applies to my_controller;
@@ -94,6 +97,8 @@ public
 			lidar_control_thread_conn: port my_thread_lidar.lidar_therad_out -> my_thread_controler.controler_therad_in;
 			control_wheels_thread_conn: port my_thread_controler.controler_therad_out -> my_thread_wheels.wheels_thread_in;
 			wheel_thread_conn: port my_thread_wheels.wheels_thread_out -> wheels_out;
+		flows
+			ControllerFlow: flow path lidar_thread_conn -> lidar_control_thread_conn -> control_wheels_thread_conn -> wheel_thread_conn;
 	end Controller.impl;
 	
 	-- Threads 
@@ -133,31 +138,4 @@ public
 	thread implementation ControlRules.impl
 	end ControlRules.impl;
 	
-	
 end AMR_sys;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
